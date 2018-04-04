@@ -9,6 +9,10 @@ ruby "2.5.0"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem "rails", "~> 5.1.5"
 
+gem "bcrypt", "3.1.11"
+
+gem "figaro"
+
 gem "bootstrap-sass", "3.3.7"
 
 gem "pg", ">= 0.18", "< 2.0"
@@ -28,6 +32,8 @@ gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
 
 gem "rails-controller-testing"
+
+gem "mysql2", ">= 0.3.18", "< 0.5"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
