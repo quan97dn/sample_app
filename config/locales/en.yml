@@ -63,7 +63,11 @@ en:
   users:
     new:
       title: "Sign up"
-      text-1: "This will be a signup page for new users."
+      text-1: "Name"
+      text-2: "Email"
+      text-3: "Password"
+      text-4: "Confirmation"
+      text-5: "Create my account"
   layouts:
     header:
       text-1: "sample app"
