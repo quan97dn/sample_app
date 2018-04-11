@@ -11,9 +11,13 @@
       <%= f.label :password, t(".text-2") %>
       <%= f.password_field :password, class: 'form-control' %>
 
+      <%= f.label :remember_me, class: "checkbox inline" do %>
+        <%= f.check_box :remember_me %>
+        <span>Remember me on this computer</span>
+      <% end %>
+
       <%= f.submit t(".text-3"), class: "btn btn-primary" %>
     <% end %>
-
     <p>New user? <%= link_to t(".text-4"), signup_path %></p>
   </div>
 </div>
