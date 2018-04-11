@@ -68,6 +68,13 @@ en:
       text-3: "Password"
       text-4: "Confirmation"
       text-5: "Create my account"
+  sessions:
+    new:
+      title: "Login"
+      text-1: "Email"
+      text-2: "Password"
+      text-3: "Log in"
+      text-4: "Sign up now!"
   layouts:
     header:
       text-1: "sample app"
