@@ -11,12 +11,12 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "name should be present" do
-    @user.name = "     "
+    @user.name = " "
     assert_not @user.valid?
   end
 
   test "email should be present" do
-    @user.email = "     "
+    @user.email = " "
     assert_not @user.valid?
   end
 
@@ -64,6 +64,6 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "authenticated? should return false for a user with nil digest" do
-    assert_not @user.authenticated?('')
+    assert_not @user.authenticated?("")
   end
 end
