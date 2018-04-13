@@ -23,6 +23,8 @@ gem "bootstrap-sass", "3.3.7"
 
 gem "pg", ">= 0.18", "< 2.0"
 
+gem "byebug"
+
 gem "rubocop", "~> 0.50.0", require: false
 # Use Puma as the app server
 gem "puma", "~> 3.7"
