@@ -25,6 +25,10 @@ gem "pg", ">= 0.18", "< 2.0"
 
 gem "byebug"
 
+gem "carrierwave", "1.2.2"
+
+gem "mini_magick", "4.7.0"
+
 gem "rubocop", "~> 0.50.0", require: false
 # Use Puma as the app server
 gem "puma", "~> 3.7"
@@ -61,6 +65,7 @@ end
 group :production do
   gem "pg", ">= 0.18", "< 2.0"
   gem "rails_12factor"
+  gem "fog", "1.42"
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
