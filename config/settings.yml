@@ -1,0 +1,18 @@
+user:
+  email_length: 255
+  password_length: 6
+  name_length: 50
+  size: 80
+  user_size: 50
+  time: 2
+session:
+  value: 1
+microposts:
+  size: 50
+  picture_size: 5
+  maximum: 140
+shared:
+  size: 50
+javascripts:
+  i18n:
+    size: 2
