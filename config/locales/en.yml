@@ -4,11 +4,11 @@
 #
 # To use the locales, use `I18n.t`:
 #
-#     I18n.t 'hello'
+#     I18n.t "hello"
 #
 # In views, this is aliased to just `t`:
 #
-#     <%= t('hello') %>
+#     <%= t("hello") %>
 #
 # To use a different locale, set it with `I18n.locale`:
 #
@@ -16,79 +16,181 @@
 #
 # This would use the information in config/locales/es.yml.
 #
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  custom:
+    alert:
+      max_size: "Maximum file size is 5MB. Please choose a smaller file."
+  layouts:
+    application:
+      apptitle: "Ruby on Rails Tutorial Sample App"
+    header:
+      title_logo: "sample app"
+      home: "Home"
+      log_in: "Log in"
+      help: "Help"
+      user: "User"
+      profile: "Profile"
+      settings: "Settings"
+      log_out: "Log out"
+      account: "Account"
+    footer:
+      the: "The"
+      title_tut: "Ruby on Rails Tutorial"
+      url_tut: "http://www.railstutorial.org/"
+      by: "by"
+      url_author: "http://www.michaelhartl.com/"
+      title_author: "Michael Hartl"
+      about: "About"
+      contact: "Contact"
+      url_news: "http://news.railstutorial.org/"
+      title_news: "News"
   static_pages:
     home:
-      title: "Sample App"
-      text-1: "This is the home page for the"
-      text-2: "Ruby on Rails Tutorial"
-      text-3: "sample application."
-      text-4: "Sign up now!"
-      text-5: "Rails logo"
-    help:
-      title: "Help"
-      text-1: "Get help on the Ruby on Rails Tutorial at the"
-      text-2: "Rails Tutorial help section"
-      text-3: "To get help on this sample app, see the"
-      text-4: "Ruby on Rails Tutorial"
-      text-5: "book"
-    contact:
-      title: "Contact"
-      text-1: "Contact the Ruby on Rails Tutorial about the sample app at the"
-      text-2: "contact page"
+      title: "Home"
+      home_welcome: "Welcome to the Sample App"
+      body1: "This is the home page for the"
+      body2: "sample application."
+      title_tut: "Ruby on Rails Tutorial"
+      url_tut: "http://www.railstutorial.org/"
+      sign_up: "Sign up now!"
+      rails_logo: "Rails logo"
+      url_tut: "http://rubyonrails.org/"
+      h3: "Micropost Feed"
     about:
       title: "About"
-      text-1: "The"
-      text-2: "Ruby on Rails Tutorial"
-      text-3: "is a"
-      text-4: "book"
-      text-5: "and"
-      text-6: "screencast series"
-      text-7: "to teach web development with"
-      text-8: "Ruby on Rails"
-      text-9: "This is the sample application for the tutorial."
+      body: "This is the sample application for the tutorial."
+      title_tut: "Ruby on Rails Tutorial"
+      url_tut: "http://www.railstutorial.org/"
+    help:
+      title: "Help"
+      body1: "Get help on the Ruby on Rails Tutorial at the"
+      title_help: "Rails Tutorial help section"
+      body2: "To get help on this sample app, see the"
+      title_tut: "Ruby on Rails Tutorial"
+      url_tut: "http://www.railstutorial.org/book"
+      url_help: "http://www.railstutorial.org/help"
+    contact:
+      title: "Contact"
+      body: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      title_contact: "contact page"
+      url_contact: "http://www.railstutorial.org/contact"
   users:
     new:
-      title: "Sign up"
-      text-1: "Name"
-      text-2: "Email"
-      text-3: "Password"
-      text-4: "Confirmation"
-      text-5: "Create my account"
+      sign_up: "Sign up"
+      p_content: "This will be a signup page for new users."
+      create_acc: "Create my account"
+      confirm: "Confirmation"
+    create:
+      body_create: "Welcome to the Sample App!"
+      check: "Please check your email to activate your account."
+    edit:
+      title: "Edit user"
+      update: "Update your profile"
+      save: "Save changes"
+      change: "Change"
+    index:
+      title: "All users"
+    update:
+      profile: "Profile updated"
+      fail: "Updating user information failed"
+    logged_in_user:
+      please: "Please log in."
+    user:
+      delete: "delete"
+      sure: "You sure?"
+    show:
+      microposts: "Microposts"
+    unfollow:
+      submit: "Unfollow"
+    follow:
+      submit: "Follow"
+    following:
+      title: "Following"
+    followers:
+      title: "Followers"
+    show_follow:
+      link_profile: "view my profile"
+      microposts: "Microposts:"
+  shared:
+    error_messages:
+      form_error: "The form contains"
+      error: "error"
+    user_info:
+      link_view: "view my profile"
+      micropost: "micropost"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      submit: "Post"
+      micropost_picture: "#micropost_picture"
+      change: "change"
+      content: "Maximum file size is 5MB. Please choose a smaller file."
   sessions:
     new:
-      title: "Login"
-      text-1: "Email"
-      text-2: "Password"
-      text-3: "Log in"
-      text-4: "Sign up now!"
-  layouts:
-    header:
-      text-1: "sample app"
-      text-2: "Home"
-      text-3: "Help"
-      text-4: "Log in"
-    footer:
-      text-1: "The"
-      text-2: "Ruby on Rails Tutorial"
-      text-3: "by"
-      text-4: "Michael Hartl"
-      text-5: "About"
-      text-6: "Contact"
-      text-7: "News"
-  base_title: "Ruby on rails"
-
-
+      log_in: "Log in"
+      sign_up: "Sign up now!"
+      new: "New user?"
+      remember: "Remember me on this computer"
+      forgot: "(forgot password)"
+    create:
+      invalid: "Invalid email/password combination"
+      check_mail: "Account not activated.Check your email for the activation link."
+  user_mailer:
+    account_activation:
+      title: "Sample App"
+      hi: "Hi "
+      welcom: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+    password_reset_text:
+      content1: "To reset your password click the link below:"
+      content2: "This link will expire in two hours."
+      content3: "If you did not request your password to be reset, please ignore this email and
+                 your password will stay as it is."
+    stats:
+      following: "following"
+      followers: "followers"
+    password_reset:
+      h1: "Password reset"
+      content_p1: "To reset your password click the link below:"
+      title_url: "Reset password"
+      content_p2: "This link will expire in two hours."
+      content_p3: "If you did not request your password to be reset, please ignore this email and
+your password will stay as it is."
+  account_activation:
+    activated: "Account activated!"
+    invalid: "Invalid activation link"
+  mailers:
+    user_mailer:
+      activation: "Account activation"
+      greeting: "Hi"
+      mail: "to@example.org"
+      password_reset: "Password reset"
+  password_resets:
+    new:
+      title: "Forgot password"
+      submit: "Submit"
+    create:
+      messages: "Email sent with password reset instructions"
+      not_found: "Email address not found"
+    edit:
+      title: "Reset password"
+      confirmation: "Confirmation"
+      submit: "Update password"
+    update:
+      error: "can't be empty"
+      success: "Password has been reset."
+    check_expiration:
+      expired: "Password reset has expired."
+  micropost:
+    micropost_html:
+      link_del: "delete"
+      confirm: "You sure?"
+    create:
+      created: "Micropost created!"
+    destroy:
+      deleted: "Micropost deleted"
+  model:
+    micropost:
+      picture_size: "Should be less than 5MB"
