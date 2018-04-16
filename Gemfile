@@ -20,7 +20,7 @@ gem "i18n-js"
 gem "will_paginate", "3.1.6"
 gem "bootstrap-will_paginate", "1.0.0"
 gem "bootstrap-sass", "3.3.7"
-gem "sqlite3"
+gem "pg", "0.18.4"
 gem "mysql2", ">= 0.3.18", "< 0.5"
 gem "figaro"
 # Use Puma as the app server
@@ -49,7 +49,6 @@ gem "jbuilder", "~> 2.5"
 # gem "capistrano-rails", group: :development
 
 group :production do
-  gem "pg", "0.18.4"
   gem "fog", "1.42"
   gem 'rails_12factor'
 end
