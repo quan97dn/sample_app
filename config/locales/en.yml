@@ -67,12 +67,29 @@ en:
       password: "Password"
       confirm: "Confirmation"
       create: "Create my account"
+    show:
+      no_request_user: "Not find request user"
+    create:
+      welcome_to_app: "Welcome to the Sample App!"
+  sessions:
+    new:
+      title: "Log in"
+      sign_up: "Sign up now!"
+      new: "New user?"
+      remember: "Remember me on this computer"
+      forgot: "(forgot password)"
+    create:
+      invalid: "Invalid email/password combination"
   layouts:
+    application:
+      apptitle: "Ruby on Rails Tutorial Sample App"
     header:
       sample: "sample app"
       home: "Home"
       help: "Help"
       login: "Log in"
+      logout: "Log out"
+      account: "Account"
     footer:
       the: "The"
       rubytutor: "Ruby on Rails Tutorial"
@@ -84,8 +101,6 @@ en:
   shared:
     error_messages:
       contains: "The form contains"
-  welcome_to_app: "Welcome to the Sample App!"
-  no_request_user: "Not find request user"
-  base_title: "Ruby on rails"
+      error: "error"
 
 
